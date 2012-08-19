@@ -39,7 +39,7 @@
 						<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 					{% endfor %}
 				{% endif %}
-				{% for name, link in LINKS %}
+				{% for name, link in SOCIAL+LINKS %}
 					<li><a href="{{ link }}">{{ name }}</a></li>
 				{% endfor %}
 			</ul>

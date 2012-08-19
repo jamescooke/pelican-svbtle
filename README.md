@@ -1,4 +1,3 @@
-
 # SVBTLE
 
 Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with a few minor changes for use with [Pelican](http://pelican.notmyidea.org).
@@ -19,7 +18,6 @@ You can see the [theme in action](http://williamting.com/drafts/this-is-a-theme-
 ## KNOWN ISSUES
 
 - no IE testing
-- no pages feature
 - no custom menu
 - header date format is hardcoded in `./templates/header.html` with the exception of articles.
 

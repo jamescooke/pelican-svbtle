@@ -1,11 +1,11 @@
 {% if article and article.author %}
 	<header>
-		<h1>{{ article.author }}'s blog</h1>
-		<h3>Posted {{ article.locale_date }}</h3>
+		<h1>{{ article.author }}</h1>
+		<h3>{{ article.locale_date }}</h3>
 	</header>
 {% else %}
 	<header>
-		<h1>{{ AUTHOR }}'s blog</h1>
+		<h1>{{ AUTHOR }}</h1>
 		<h3>
 			<script type="text/javascript">
 				var currentDate = new Date();

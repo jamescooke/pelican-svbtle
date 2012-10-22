@@ -1,12 +1,18 @@
-@red:					#ff0000;
-@black:				#000000;
-@white:				#ffffff;
+@red:		#ff0000;
+@black:		#000000;
+@white:		#ffffff;
 @light-grey:	#eeeeee;
-@med-grey:		#999999;
-@dark-grey:		#4d4d4d;
-@blue:				#0e94ec;
+@med-grey:	#999999;
+@dark-grey:	#4d4d4d;
+@blue:		#0e94ec;
 
-@accent:			@med-grey;
+@accent:	@med-grey;
+
+@normal_text_size:     1em;
+@normal_text_line-height: 140%;
+
+@button_link_border: 0.25em;
+@button_link_size: 1em;
 
 html {
 	min-height: 100%;
@@ -24,8 +30,8 @@ body {
 	background-color: @white;
 	color: @dark-grey;
 	font-family: 'Proxima Nova', 'Open Sans', sans-serif;
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 1.125em;
+	line-height: 100%;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -83,14 +89,15 @@ a {
 }
 
 section#sidebar {
-	width: 258px;
-	position: fixed;
+	width: 20%;
+	//position: fixed; #side bar cannot fixed
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: auto;
 	min-height: 700px;
 	z-index: 0;
+	float:left;
 
 	figure {
 		margin: 40px 40px;
@@ -107,7 +114,7 @@ section#sidebar {
 		display: block;
 		font-family: 'Proxima Nova', 'Open Sans', sans-serif;
 		font-weight: 900;
-		font-size: 34px;
+		font-size: 2em;
 		line-height: 38px;
 		a {
 			border: none;
@@ -117,7 +124,7 @@ section#sidebar {
 	h2 {
 		margin: 0 40px 0 0;
 		padding: 0 0 0 40px;
-		font-size: 18px;
+		font-size: 1em;
 		font-weight: 300;
 		line-height: 20px;
 	}
@@ -130,22 +137,22 @@ section#sidebar {
 	li {
 		margin: 0;
 		padding: 10px 0 20px;
+		float:left;
 
 		clear: both;
 		display: block;
-		float: none;
 
 		a {
 			color: @med-grey;
-			font-size: 15px;
-			line-height: 19px;
-			border: 3px solid @light-grey;
-			.border-radius(35px);
-			padding: 7px 15px;
+			font-size: @button_link_size;
+			line-height: 150%;
+			border: @button_link_border solid @light-grey;
+			.border-radius(1em);
+			padding: 0.2em 0.75em;
 
     		&:hover {
     			color: @accent;
-			    border: 3px solid @accent;
+			border: @button_link_border solid @accent;
     		}
 
 		}
@@ -155,21 +162,20 @@ section#sidebar {
 		margin: 0;
 		padding: 0;
 		position: absolute;
-		bottom: 45px;
+		bottom: 3em;
 
-		width: 258px;
+		width: 20%;
 		text-align: center;
 		color: @med-grey;
-		font-size: 12px;
+		font-size: 0.2em;
 		font-weight: 300;
-		line-height: 15px;
 	}
 }
 
 section#posts {
 	top: 0;
-	margin: 0 0 0 260px;
-	padding: 0 0 75px 0;
+	width: 79%;
+	float:left;
 	min-height: 700px;
 	min-width: 710px;
 	height: 100%;
@@ -177,19 +183,18 @@ section#posts {
 	background-color: rgba(255,255,255,.9);
 	position: relative;
 	z-index: 1;
+	line-height: 100%;
 
 	h1 {
-		margin: 24px 0 16px;
+		margin: 1.5em 0 0.75em;
 		color: @black;
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 1.65em;
 	}
 
 	h2 {
-		margin: 24px 0 14px;
+		margin: 1.5em 0 0.75em;
 		color: @black;
 		font-size: 20px;
-		line-height: 26px;
 	}
 
 	h3 {
@@ -232,17 +237,17 @@ section#posts {
 	}
 
 	p {
-		width: 600px;
+		width: 100%;
 	}
 
 	blockquote {
 		margin: 0;
-		padding: 0 0 0 20px;
+		padding: 0 0 0 30px;
 		display: inline-block;
-		border-left: 10px solid @accent;
-		max-width: 500px;
+		border-left: 20px solid @accent;
+		max-width: 100%;
 		p {
-			width: 530px;
+			width: 100%;
 		}
 	}
 
@@ -274,9 +279,8 @@ section#posts {
 		color: @light-grey;
 		background-color: @light-grey;
 		height: 1px;
-		width: 600px;
+		width: 100%;
 		border: none;
-		margin-bottom: 30px;
 		float: left;
 	}
 
@@ -358,8 +362,8 @@ section#posts {
 		padding: 40px 40px 40px 50px;
 		min-width: 620px;
 		position: relative;
-		font-size: 15px;
-		line-height: 25px;
+		font-size: @normal_text_size;
+		line-height: @normal_text_line-height;
 		overflow-x: hidden;
 		overflow-y: hidden;
 
@@ -418,8 +422,8 @@ section#posts {
 	dl {
 		margin: 0;
 		padding: 0;
-		font-size: 15px;
-		line-height: 25px;
+		font-size: @normal_text_size;
+		line-height: @normal_text_line-height;
 		overflow-x: hidden;
 		overflow-y: hidden;
 
@@ -444,7 +448,7 @@ section#posts {
 			}
 
 			.entry-content {
-				width: 550px;
+				width: 70%;
 			}
 
 			abbr {

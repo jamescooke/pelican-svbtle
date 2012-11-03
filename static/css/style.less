@@ -236,6 +236,9 @@ section#sidebar {
      section#posts {
 	 width: 79%;
      }
+     section#posts a.button_accent {
+	 margin: 2em;
+     }
      section#posts dl{
 	 padding: 2em 2.5em 2em 0em;
      }
@@ -256,6 +259,9 @@ section#sidebar {
      }
      section#posts {
 	 width: 99%;
+     }
+     section#posts a.button_accent {
+	 margin: 2em 0.3em 2em;
      }
      section#posts dl {
 	 padding: 0;
@@ -415,14 +421,13 @@ section#posts {
 	}
 
 	a.button_accent {
-		margin: 2em;
-		padding: 10px 20px;
+		padding: 0.5em 1.15em;
 		display: inline-block;
-		border: 3px solid @accent;
-		.border-radius(70px);
+		border: 0.2em solid @accent;
+		.border-radius(2em);
 		text-transform: uppercase;
 		color: @accent;
-		font-size: 17px;
+		font-size: 0.9em;
 		font-weight: 400;
 		&:link {
 			color: @accent;

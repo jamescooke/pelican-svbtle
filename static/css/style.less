@@ -14,6 +14,8 @@
 @button_link_border: 0.15em;
 @button_link_size: 1em;
 
+@padding_for_content_part: 2em 1em 2em 2em;
+
 html {
 	min-height: 100%;
 	margin: 0;
@@ -383,7 +385,7 @@ section#posts {
 
 	header {
 		margin: 0;
-		padding: 2em 1em 2em;
+		padding: @padding_for_content_part;
 		border-bottom: @light-grey 1px solid;
 		font-color: @black;
 		font-weight: 300;
@@ -455,7 +457,7 @@ section#posts {
 
 	article {
 		margin: 0;
-		padding: 2em 1em 2em;
+		padding: @padding_for_content_part;
 		position: relative;
 		font-size: @normal_text_size;
 		line-height: @normal_text_line-height;
@@ -490,7 +492,7 @@ section#posts {
 
 	#comments {
 		margin: 0;
-		padding: 2em 1em 2em;
+		padding: @padding_for_content_part;
 		position: relative;
 		border-top: @light-grey 1px solid;
 		font-size: 15px;

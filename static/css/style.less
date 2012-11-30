@@ -103,7 +103,7 @@ section#navbar {
 
 	h1 {
 		margin: 30px 20px 10px 0px;
-		padding: 0 0 0 40px;
+		padding: 0 0 0 0.5em;
 		display: block;
 		font-family: 'Proxima Nova', 'Open Sans', sans-serif;
 		font-weight: 900;
@@ -114,35 +114,35 @@ section#navbar {
 	}
 
 	h2 {
-		margin: 0 40px 0 0;
-		padding: 0 0 0 40px;
+		margin: 0 1em 0 0;
+		padding: 0 0 0 1em;
 		font-size: 1em;
 		font-weight: 300;
 	}
 
 	ul {
-		margin: 50px 0 0 0;
-		padding: 0 0 0 40px;
+		padding: 0 0 0 1em;
 	}
 
 	li {
-		margin: 0;
-		padding: 10px 0 20px;
-		float:left;
+		margin-top: 0.25em;
+		padding: 0 0.1em;
+		float: left;
 		display: inline;
 
 		a {
-			color: @med-grey;
-			font-size: @button_link_size;
-			line-height: 100%;
-			border: @button_link_border solid @light-grey;
-			.border-radius(3em);
-			padding: 0.5em 1em;
+		    display: block;
+		    color: @med-grey;
+		    font-size: @button_link_size;
+		    line-height: 100%;
+		    border: @button_link_border solid @light-grey;
+		    .border-radius(3em);
+		    padding: 0.5em 1em;
 
-    		&:hover {
+    		    &:hover {
     			color: @accent;
 			border: @button_link_border solid @accent;
-    		}
+    		    }
 
 		}
 	}
@@ -263,7 +263,7 @@ section#sidebar {
 	 width: 99%;
      }
      section#posts a.button_accent {
-	 margin: 2em 0.3em 2em;
+	 margin: 2em 1em 2em;
      }
      section#posts dl {
 	 padding: 0;

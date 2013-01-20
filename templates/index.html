@@ -1,17 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-    <dl>
-        <ol>
-            {% for article in articles_page.object_list %}
-                <li>
-                    <h1 class="title">
-                        <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>{{ article.title }}</a>
-                    </h1>
-                    <div class="entry-content"> {{ article.content }} </div>
-                    <div class="abbr published">Posted <a href='{{ SITEURL }}/{{ article.url }}' title='{{ article.date.isoformat() }}'>{{ article.locale_date }}</a></div>
-                </li>
-            {% endfor %}
-        </ol>
-    </dl>
+    {% for article in articles_page.object_list %}
+        <article class='listed'>
+            <h1 class="title">
+                <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>{{ article.title }}</a>
+            </h1>
+            <div class="article-content"> {{ article.content }} </div>
+            <div class="abbr published">Posted <a href='{{ SITEURL }}/{{ article.url }}' title='{{ article.date.isoformat() }}'>{{ article.locale_date }}</a></div>
+        </article>
+    {% endfor %}
     {% include 'pagination.html' %}
 {% endblock content %}

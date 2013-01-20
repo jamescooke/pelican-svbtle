@@ -59,6 +59,15 @@ a {
         }
 }
 
+.title {
+        margin: 2em 0 0;
+        padding: 0;
+        color: @black;
+        a {
+                border: none;
+        }
+}
+
 .background-clip() {
         background-clip: padding-box;
         -moz-background-clip: padding;
@@ -98,6 +107,12 @@ a {
         text-transform: uppercase;
         font-weight: 300px;
         font-size: 0.75em;
+}
+
+.article-content {
+        p, ul, ol {
+                width: 70%;
+        }
 }
 
 section#navbar {
@@ -154,8 +169,6 @@ section#navbar {
 
                 }
         }
-
-
 }
 
 section#sidebar {
@@ -232,9 +245,9 @@ section#sidebar {
 
 @media screen and (min-width: 880px) {
      section#posts {
+         margin-left:25%;
          width: 74%;
          max-width: 1024px;
-         margin-left: 25%;
      }
      section#posts a.button_accent {
          margin: 2em;
@@ -255,7 +268,13 @@ section#sidebar {
          display: block;
      }
      section#posts {
+         margin-left: 0;
          width: 99%;
+     }
+     .entry-content {
+         p, ul, ol {
+             width: 100%;
+         }
      }
      section#posts a.button_accent {
          margin: 2em 1em 2em;
@@ -285,7 +304,6 @@ section#posts {
         position: relative;
         z-index: 1;
         line-height: 100%;
-        margin-left:25%;
 
         h1 {
                 margin: 1.5em 0 0.75em;
@@ -333,10 +351,6 @@ section#posts {
                 pre {
                         width: 100%;
                 }
-        }
-
-        p {
-                width: 100%;
         }
 
         blockquote {
@@ -494,34 +508,5 @@ section#posts {
                         }
                 }
 
-        dl {
-                margin: 0;
-                font-size: @normal_text_size;
-                line-height: @normal_text_line-height;
-                overflow-x: hidden;
-                overflow-y: hidden;
 
-                ol {
-                        padding: 0;
-                        list-style-type: none;
-
-                        li {
-                                margin: 0 0 0 1em;
-                                list-style-tyle: discs;
-                        }
-
-                        .title {
-                                margin: 2em 0 0;
-                                padding: 0;
-                                color: @black;
-                                a {
-                                        border: none;
-                                }
-                        }
-
-                        .entry-content {
-                                width: 75%;
-                        }
-                }
-        }
 }

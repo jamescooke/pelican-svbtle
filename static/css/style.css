@@ -6,6 +6,7 @@ a:hover{color:#0e94ec;outline:0;}
 a:active{color:#0e94ec;outline:0;}
 a:focus{outline:thin dotted;}
 .clearfix{content:".";display:block;height:0;clear:both;}
+.abbr{margin-top:2em;padding:0;text-transform:uppercase;font-weight:300px;font-size:0.75em;}
 section#navbar{width:100%;display:none;}section#navbar div#user_meta{float:left;width:30%;}
 section#navbar h1{margin:30px 20px 10px 0px;padding:0 0 0 0.5em;display:block;font-family:'Proxima Nova','Open Sans',sans-serif;font-weight:900;font-size:2em;}section#navbar h1 a{border:none;}
 section#navbar h2{margin:0 1em 0 0;padding:0 0 0 1em;font-size:1em;font-weight:300;}
@@ -17,7 +18,7 @@ section#sidebar h2{margin:0 40px 0 0;padding:0 0 0 40px;font-size:1em;font-weigh
 section#sidebar ul{margin:50px 0 0 0;padding:0 0 0 40px;}
 section#sidebar li{margin:0 0 0.3em;float:left;clear:both;display:block;}section#sidebar li a{color:#999999;font-size:1em;line-height:100%;border:0.15em solid #eeeeee;border-radius:3em;-moz-border-radius:3em;-webkit-border-radius:3em;padding:0.5em 1em;display:block;}section#sidebar li a:hover{color:#0e94ec;border:0.15em solid #0e94ec;}
 section#sidebar footer{margin:0;padding:0;position:absolute;bottom:3em;width:20%;text-align:center;color:#999999;font-size:0.75em;font-weight:300;}
-@media screen and (min-width:880px){section#posts{width:79%;max-width:1024px;} section#posts a.button_accent{margin:2em;} section#posts dl{padding:2em 2.5em 2em 0em;} section#posts dl ol{margin:0 0 0 1em;}}@media screen and (max-width:880px){header{display:none;} section#sidebar{display:none;} section#navbar{display:block;} section#posts{width:99%;} section#posts a.button_accent{margin:2em 1em 2em;} section#posts dl{padding:0;} section#posts dl ol{margin:0;} section#posts dl ol li{padding:0 1em 1em 0;} section#posts article{padding:2em 1em 2em;}}section#posts{top:0;float:left;min-height:700px;height:100%;border-left:#eeeeee 1px solid;background-color:rgba(255, 255, 255, 0.9);position:relative;z-index:1;line-height:100%;}section#posts h1{margin:1.5em 0 0.75em;color:#000000;font-size:1.65em;}
+@media screen and (min-width:880px){section#posts{width:79%;max-width:1024px;} section#posts a.button_accent{margin:2em;} section#posts dl{padding:2em 2.5em 2em 0em;} section#posts dl ol{margin:0 0 0 1em;}}@media screen and (max-width:880px){header{display:none;} section#sidebar{display:none;} section#navbar{display:block;} section#posts{width:99%;} section#posts a.button_accent{margin:2em 1em 2em;} section#posts dl{padding:0;} section#posts dl ol{margin:0;} section#posts dl ol li{padding:0 1em 1em 0;} section#posts article{padding:2em 1em 2em;}}section#posts{top:0;float:left;min-height:700px;height:100%;border-left:#eeeeee 1px solid;background-color:rgba(255, 255, 255, 0.9);position:relative;z-index:1;line-height:100%;}section#posts h1{margin:1.5em 0 0.75em;color:#000000;font-size:1.65em;line-height:130%;}
 section#posts h2{margin:1.5em 0 0.75em;color:#000000;font-size:20px;}
 section#posts h3{margin:22px 0 12px;color:#000000;}
 section#posts h4{margin:20px 0 10px;color:#000000;}
@@ -38,13 +39,11 @@ section#posts a.button_accent{padding:0.5em 1.15em;display:inline-block;border:0
 section#posts a.button_accent:hover{color:#ffffff;background-color:#0e94ec;outline:0;}
 section#posts a.button_accent:active{color:#ffffff;background-color:#0e94ec;outline:0;}
 section#posts p.paginator{margin:0;padding:0;min-height:122px;width:100%;border-top:#eeeeee 1px solid;}
-section#posts article{margin:0;padding:2em 1em 2em 2em;position:relative;font-size:1em;line-height:150%;overflow-x:hidden;overflow-y:hidden;}section#posts article #title{margin:1em 0 0px;padding:0;color:#000000;}section#posts article #title a{border:none;}
+section#posts article{margin:0;padding:2em 1em 2em 2em;position:relative;font-size:1em;line-height:150%;overflow-x:hidden;overflow-y:hidden;}section#posts article #title{margin:2em 0 0px;padding:0;color:#000000;}section#posts article #title a{border:none;}
 section#posts article #article_meta{margin:3em 0 0 0;padding:0;font-size:0.9em;}
-section#posts article abbr{margin:0;padding:0;text-transform:uppercase;font-weight:300px;font-size:0.75em;visibility:hidden;}
 section#posts #comments{margin:0;padding:2em 1em 2em;position:relative;border-top:#eeeeee 1px solid;font-size:15px;line-height:25px;min-height:600px;}section#posts #comments h2{color:#000000;}
 section#posts #disqus_thread{width:100%;}
 section#posts dl#tag_list{margin:0;padding:40px 40px 40px 50px;font-size:14px;line-height:18px;}section#posts dl#tag_list ul{margin:0;padding:0;}section#posts dl#tag_list ul li{margin:0;padding:0;}
 section#posts dl{margin:0;font-size:1em;line-height:150%;overflow-x:hidden;overflow-y:hidden;}section#posts dl ol{padding:0;list-style-type:none;}section#posts dl ol li{margin:0 0 0 1em;list-style-tyle:discs;}
-section#posts dl ol .title{margin:1em 0 0;padding:0;color:#000000;}section#posts dl ol .title a{border:none;}
+section#posts dl ol .title{margin:2em 0 0;padding:0;color:#000000;}section#posts dl ol .title a{border:none;}
 section#posts dl ol .entry-content{width:75%;}
-section#posts dl ol abbr{margin:0;padding:0;text-transform:uppercase;font-weight:300px;font-size:13px;line-height:16px;visibility:hidden;}

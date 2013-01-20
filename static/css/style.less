@@ -92,6 +92,14 @@ a {
         word-wrap: break-word;
 }
 
+.abbr {
+        margin-top: 2em;
+        padding: 0;
+        text-transform: uppercase;
+        font-weight: 300px;
+        font-size: 0.75em;
+}
+
 section#navbar {
         width: 100%;
         display: none;
@@ -295,6 +303,7 @@ section#posts {
                 margin: 1.5em 0 0.75em;
                 color: @black;
                 font-size: 1.65em;
+                line-height: 130%;
         }
 
         h2 {
@@ -468,7 +477,7 @@ section#posts {
                 overflow-y: hidden;
 
                 #title{
-                        margin: 1em 0 0px;
+                        margin: 2em 0 0px;
                         padding: 0;
                         color: @black;
                         a {
@@ -482,14 +491,7 @@ section#posts {
                         font-size: 0.9em;
                 }
 
-                abbr {
-                    margin: 0;
-                    padding: 0;
-                    text-transform: uppercase;
-                    font-weight: 300px;
-                    font-size: 0.75em;
-                    visibility: hidden;
-                }
+                
 
         }
 
@@ -545,7 +547,7 @@ section#posts {
                         }
 
                         .title {
-                                margin: 1em 0 0;
+                                margin: 2em 0 0;
                                 padding: 0;
                                 color: @black;
                                 a {
@@ -555,16 +557,6 @@ section#posts {
 
                         .entry-content {
                                 width: 75%;
-                        }
-
-                        abbr {
-                                margin: 0;
-                                padding: 0;
-                                text-transform: uppercase;
-                                font-weight: 300px;
-                                font-size: 13px;
-                                line-height: 16px;
-                                visibility: hidden;
                         }
                 }
         }

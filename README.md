@@ -1,31 +1,13 @@
-# SVBTLE
+# SVBTLE tweaked
 
-Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with a few minor changes for use with [Pelican](http://pelican.notmyidea.org).
+This theme is a copy of a copy and is based on [Svbtle.com](http://www.svbtle.com).
 
-## DEMO
+Originally ported to [Pelican](http://pelican.notmyidea.org) by [William Ting](https://github.com/wting/) - download the [repository](https://github.com/wting/pelican-svbtle).
 
-You can see the [theme in action](http://williamting.com/drafts/this-is-a-theme-testing-post.html), or the site code [here](https://github.com/wting/williamting.com).
+Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/responsive) were made by [Tyler Xing](https://github.com/CNBorn).
 
-![theme screenshot](https://raw.github.com/wting/pelican-svbtle/master/screenshot.png)
+I merged the responsive branch into master and made some small changes of my own.
 
-## FEATURES
-
-- syntax highlighting for code blocks
-- Google Analytics
-- Disqus commenting
-- custom list of links
-
-## KNOWN ISSUES
-
-- no IE testing
-- no custom menu
-- header date format is hardcoded in `./templates/header.html` with the exception of articles.
-
-## INSTALL
-
-### FROM SOURCE
-
-Download the [repository](https://github.com/wting/pelican-svbtle) and save it somewhere accessible. Edit `settings.py` and modify the `THEME` variable to point to the downloaded theme location.
 
 ### FROM OFFICIAL REPO
 
@@ -47,9 +29,9 @@ These are the Pelican global variables currently supported by the theme:
 
 - A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
 
-## AUTHOR
+## AUTHORS
 
-William Ting
+William Ting, Tyler Xing, James Cooke
 
 ## LICENSE
 

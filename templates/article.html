@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }} - {{ SITENAME }}{%endblock%}
 {% block content %}
-        {% include "header.html" %}
         <article>
                 <h1 id="title">
                         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"

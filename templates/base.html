@@ -12,14 +12,14 @@
     {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% endblock head %}
 </head>
 
 <body>
     <section id="navbar">
         <div class="user_meta">
-            <h1 id="user"><a href="{{ SITEURL }}" class="">{{ AUTHOR }}</a></h1>
+            <h1 id="user"><a href="{{ SITEURL }}" class="">{{ SITENAME }}</a></h1>
             <h2>{{ TAGLINE }}</h2>
         </div>
         <div class="nav-button">
